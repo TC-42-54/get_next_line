@@ -6,7 +6,7 @@
 #    By: tchezier <tchezier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/04 11:15:14 by tchezier          #+#    #+#              #
-#    Updated: 2014/11/21 11:25:11 by tchezier         ###   ########.fr        #
+#    Updated: 2014/11/22 09:57:35 by tchezier         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -22,7 +22,7 @@ all: $(NAME)
 
 $(NAME):
 		gcc -Wall -Wextra -Werror -L lib -lft -c $(SRC) -I $(HEADER)
-		gcc -gtabs -L lib -lft $(OBJ) -I $(HEADER) 
+		gcc -g -L lib -lft $(OBJ) -I $(HEADER) 
 
 clean:
 		rm -f $(OBJ)
